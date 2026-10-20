@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>제품 이슈 관리 시스템</title>
+</head>
+<body>
+
+<h1>제품 이슈 관리 시스템</h1>
+
+<input id="product" placeholder="제품명 입력">
+<button onclick="search()">검색</button>
+
+<div id="result"></div>
+
+<script>
+function search(){
+
+let p =
+document.getElementById("product").value;
+
+if(p=="헤라클레스"){
+
+document.getElementById("result").innerHTML=
+"특이사항 : 충진 시 거품 발생";
+
+}else{
+
+document.getElementById("result").innerHTML=
+"제품 없음";
+
+}
+
+}
+</script>
+
+</body>
+</html>
